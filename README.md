@@ -3,7 +3,7 @@
 <hr>
 <br><br>
 
-<b>-> Bu web site altının güncel kur fiyatlarını sunar biz. </b>
+<b>-> Bu web site altının güncel kur fiyatlarını sunar bize. </b>
 <br><br><hr>
 
 -> Bu proje NODE-JS ile yapılmıştır..
