@@ -1,0 +1,51 @@
+
+body{
+    background-image: url("/images/arkaplan.png");
+    background-repeat: repeat-y;
+    
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#imgcolumn{
+    max-width: max-content;
+    
+}
+.title{
+    color: #906428;
+}
+
+#iconimg{
+    max-height: 13vh;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius:40% ;
+    border-bottom-left-radius: 0%;
+    box-shadow: 2px 25px 10px yellow;
+}
+#anaDiv{
+    padding: 0px;
+}
+#AnaCard{
+    border-top-right-radius: 180px;
+   
+}
+#icerikDiv {         
+    position: relative;
+}
+@media (max-width:1000px) {
+    #anaDiv{
+        width: 100vw;
+    }
+    #AnaCard{
+        border-bottom-right-radius: 0px;
+    }
+    #icerikDiv {         
+        position: relative;
+        left: 0px;
+        width: 100vw;
+    
+    }
+ }

@@ -1,0 +1,73 @@
+<div class="card " id="AnaCard">
+  <div class="card-image">
+
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content columns is-vcentered ">
+
+        <p class="title is-4 pl-2 pb-0 is-size-1">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <%-data.Update_Date %>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="block"></div>
+  <div class="card-content">
+    <div class="media">
+
+
+      <div class="media-content columns is-multiline">
+        <% keys.forEach(e=> { %>
+          <div class="box column is-one-quarter">
+            <article class="media" style="background-color:#fffacd ;">
+              <div class="media-left">
+                <figure class="image is-64x64" style="padding-left:5px ;">
+                  <p class="is-size-4 <%-(data[e]["Değişim"].includes("-"))!=true ?  "has-text-primary":" has-text-danger" %>"> 
+                    <% if ((data[e]["Değişim"].includes("-"))!=true) { %>
+                      <i class="fa-solid fa-circle-chevron-up fa-bounce fa-xl" style="color: #00ff00;"></i> 
+                    <% } else { %>
+                      <i class="fa-solid fa-circle-chevron-down fa-beat-fade fa-xl" style="color: #ff0000;"></i> 
+                     <% } %> 
+                    <%=data[e]["Değişim"] %>
+                  </p>
+                  
+                </figure>
+    
+                <figure class="image is-64x64" style="position: relative;bottom: -40px;left: 7px;">
+                  <img src="/images/<%-e=="gumus"?"gumus":"Gold" %>.png" style="border-radius: 16px;">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong><p class="title is-4  pb-4 pl-2 is-size-3"><%- e=="cumhuriyet-altini"? "Cumhuriyet" : (e[0].toUpperCase() + e.slice(1)).replaceAll("-"," ")%></p></strong>
+                    <div class="blok" style="background-color: white;border-radius: 20px;padding-left: 5px;border-bottom-right-radius:0px ;">
+                      <p class="is-size-4 <%-(data[e]["Değişim"].includes("-"))!=true ?  "has-text-primary":" has-text-danger" %>"> 
+                      <strong> ALIŞ: </strong><%=data[e]["Alış"] %> <br>
+                      <strong> SATIŞ: </strong><%=data[e]["Satış"] %>
+                    </p>
+                  </div>
+                     
+
+                      
+                            
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+
+
+          <% }) %>
+        </div>
+    </div>
+
+  </div>
+
+
+</div>
