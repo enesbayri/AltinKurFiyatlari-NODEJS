@@ -17,9 +17,9 @@
 <br><hr><br>
 <p align="center">
     <h6>Giriş Sayfası:</h6><br>
-    <img src="/images/giris.png" style="border-radius: 30px;padding:10px " width="800"> <br><br>
+    <img src="public/images/giris.png" style="border-radius: 30px;padding:10px " width="800"> <br><br>
     <h6>Gelen Token Maili:</h6><br>
-    <img src="/images/mail.png" style="border-radius: 30px;padding:10px " width="800"><br><br>
+    <img src="public/images/mail.png" style="border-radius: 30px;padding:10px " width="800"><br><br>
     <h6>Ana Sayfa:</h6><br>
-    <img src="/images/home.png" style="border-radius: 30px;padding:10px " width="800">  
+    <img src="public/images/home.png" style="border-radius: 30px;padding:10px " width="800">  
 </p>
